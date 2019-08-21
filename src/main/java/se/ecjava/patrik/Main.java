@@ -11,7 +11,7 @@ public class Main {
      * -------------------------PJ93----------------------------
      */
         static Scanner scanner = new Scanner(System.in);
-        public static void MainCalc(){
+        public static void main(String... args){
             boolean keepalive = true;
             while(keepalive){
                 System.out.println("Enter the first number");
