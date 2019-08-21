@@ -18,7 +18,8 @@ public class Main {
                 int number1 = Integer.parseInt(scanner.nextLine());
                 System.out.println("Enter the seconded number");
                 int number2 = Integer.parseInt(scanner.nextLine());
-                //char mathselect = Character.isJavaIdentifierPart(); deleted and replaced with a simple number option for the time be
+                //char mathselect = Character.isJavaIdentifierPart();
+                // deleted and replaced with a simple number option for the time be
                 System.out.println("choose math equation");
                 int mathselect = Integer.parseInt(scanner.nextLine());
                 switch(mathselect){
