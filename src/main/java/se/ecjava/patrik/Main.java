@@ -12,6 +12,7 @@ public class Main {
         public static void MainCalc(){
             boolean keepalive = true;
             while(keepalive){
+                System.out.println("Enter number");
 
             }//while
         }//static void
