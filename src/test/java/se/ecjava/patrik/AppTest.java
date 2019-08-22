@@ -9,7 +9,7 @@ import org.junit.Test;
 public class AppTest 
 {
     @Test
-    public void Test() {
+    public void TestAddition() {
         //arrange
         int AssmentX =5;
         int AssmentY = 10;
@@ -19,4 +19,38 @@ public class AppTest
         //Assert
         assertEquals(Expected, actual);
     }
+    @Test
+    public void TestSubtraction() {
+        //arrange
+        int AssmentX =10;
+        int AssmentY = 5;
+        int Expected = 5;
+        //act
+        int actual = Main.calcMethodSub(AssmentX, AssmentY);
+        //Assert
+        assertEquals(Expected, actual);
+    }
+    @Test
+    public void TestMultiplication() {
+        //arrange
+        int AssmentX =10;
+        int AssmentY = 5;
+        int Expected = 50;
+        //act
+        int actual = Main.calcMethodMulti(AssmentX, AssmentY);
+        //Assert
+        assertEquals(Expected, actual);
+    }
+    @Test
+    public void TestDivision() {
+        //arrange
+        int AssmentX =10;
+        int AssmentY = 5;
+        int Expected = 2;
+        //act
+        int actual = Main.calcMethodDiv(AssmentX, AssmentY);
+        //Assert
+        assertEquals(Expected, actual);
+    }
+
 }
