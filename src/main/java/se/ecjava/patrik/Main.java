@@ -16,15 +16,18 @@ public class Main {
             boolean calculation = false;
             while(keepalive){
                 System.out.println("Make a calculation or quit?");
-                System.out.print("y/n");
+                System.out.println("y/n");
                 String onoff = scanner.nextLine();
                 switch(onoff){
                     case"y":
                         calculation=true;
                         break;
-                    default:
+                    case"n":
                         keepalive = false;
                         break;
+                    default:
+                        System.out.println("Invalid input, please use y or n");
+                        //break;
                 }//switch
                 while(calculation){
                     System.out.println("Enter the first number");
@@ -40,20 +43,20 @@ public class Main {
                     String mathselect = scanner.nextLine();
                     switch(mathselect){
                         case "+":
-                            calcMethodAdd(number1, number2);
+                            System.out.println(number1+"+"+number2+ " = " +calcMethodAdd(number1, number2));
                             break;
                         case "-":
-                            calcMethodSub(number1,number2);
+                            System.out.println(number1+"-"+number2+ " = " +calcMethodSub(number1, number2));
                             break;
                         case "*":
-                            calcMethodMulti(number1,number2);
+                            System.out.println(number1+"*"+number2+ " = " +calcMethodMulti(number1, number2));
                             break;
                         case "/":
-                            calcMethodDiv(number1,number2);
+                            System.out.println(number1+ "/" +number2 +" = " +calcMethodDiv(number1, number2));
                             break;
                         default:
                             System.out.println("please only use +, - , * and /");
-                            break;
+                            //break;
                     }//switch
                     calculation=false;
                 }//whilecalculation
@@ -62,16 +65,20 @@ public class Main {
         }//static void
 
     //Calculation Methods
-    static void calcMethodAdd(int x, int y){
-        System.out.println(x + y);
+    public static int calcMethodAdd(int x, int y){
+        int i = x + y;
+        return i;
     }
-    static void calcMethodSub(int x, int y){
-        System.out.println(x - y);
+    public static int calcMethodSub(int x, int y){
+        int i = x - y;
+        return i;
     }
-    static void calcMethodMulti(int x, int y){
-        System.out.println(x * y);
+    public static int calcMethodMulti(int x, int y){
+        int i = x * y;
+        return i;
     }
-    static void calcMethodDiv(int x, int y){
-        System.out.println(x / y);
+    public static int calcMethodDiv(int x, int y){
+        int i = x / y;
+        return i;
     }
 }//main
