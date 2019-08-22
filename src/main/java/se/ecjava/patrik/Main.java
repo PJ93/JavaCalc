@@ -21,24 +21,26 @@ public class Main {
                 //char mathselect = Character.isJavaIdentifierPart();
                 // deleted and replaced with a simple number option for the time be
                 System.out.println("choose math equation");
-                System.out.println("1: +, 2: -, 3: *, 4:/");
-                int mathselect = Integer.parseInt(scanner.nextLine());
+                System.out.println("+,-,*,/");
+                //int mathselect = Integer.parseInt(scanner.nextLine());
+                //swapped out the int to a string because it makes more sense for the user
+                String mathselect = scanner.nextLine();
                 switch(mathselect){
-                    case 1:
+                    case "+":
                         System.out.println(number1+number2);
                         break;
-                    case 2:
+                    case "-":
                         System.out.println(number1-number2);
                         break;
-                    case 3:
+                    case "*":
                         System.out.println(number1*number2);
                         break;
-                    case 4:
+                    case "/":
                         System.out.println(number1 / number2);
                         break;
                     default:
                         System.out.println("please only use +, - , * and /");
-                        break;
+                        //break;
                 }//switch
 
             }//while
