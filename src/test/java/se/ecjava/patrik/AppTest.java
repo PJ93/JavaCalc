@@ -2,6 +2,8 @@ package se.ecjava.patrik;
 
 import static org.junit.Assert.assertTrue;
 
+import static se.ecjava.patrik.Main.scanner;
+
 import org.junit.Test;
 
 /**
@@ -9,12 +11,5 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+
 }
