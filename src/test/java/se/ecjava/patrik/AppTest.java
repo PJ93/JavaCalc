@@ -11,46 +11,48 @@ public class AppTest
     @Test
     public void TestAddition() {
         //arrange
-        int AssmentX =5;
-        int AssmentY = 10;
-        int Expected = 15;
+        double AssmentX =5;
+        double AssmentY = 10;
+        double Expected = 15;
+        double delta = 0.01; //margain for error, needt to make assertEquals work with doubles
         //act
-        int actual = Main.calcMethodAdd(AssmentX, AssmentY);
+        double actual = Main.calcMethodAdd(AssmentX, AssmentY);
         //Assert
-        assertEquals(Expected, actual);
+        assertEquals(Expected, actual, delta);
     }
     @Test
     public void TestSubtraction() {
-        //arrange
-        int AssmentX =10;
-        int AssmentY = 5;
-        int Expected = 5;
-        //act
-        int actual = Main.calcMethodSub(AssmentX, AssmentY);
+        double AssmentX =10;
+        double AssmentY = 5;
+        double Expected = 5;
+        double actual = Main.calcMethodSub(AssmentX, AssmentY);
+        double delta = 0.01;
         //Assert
-        assertEquals(Expected, actual);
+        assertEquals(Expected, actual, delta);
     }
     @Test
     public void TestMultiplication() {
         //arrange
-        int AssmentX =10;
-        int AssmentY = 5;
-        int Expected = 50;
+        double AssmentX =10;
+        double AssmentY = 5;
+        double Expected = 50;
+        double delta = 0.01;
         //act
-        int actual = Main.calcMethodMulti(AssmentX, AssmentY);
+        double actual = Main.calcMethodMulti(AssmentX, AssmentY);
         //Assert
-        assertEquals(Expected, actual);
+        assertEquals(Expected, actual, delta);
     }
     @Test
     public void TestDivision() {
         //arrange
-        int AssmentX =10;
-        int AssmentY = 5;
-        int Expected = 2;
+        double AssmentX =10;
+        double AssmentY = 5;
+        double Expected = 2;
+        double delta = 0.01;
         //act
-        int actual = Main.calcMethodDiv(AssmentX, AssmentY);
+        double actual = Main.calcMethodDiv(AssmentX, AssmentY);
         //Assert
-        assertEquals(Expected, actual);
+        assertEquals(Expected, actual, delta);
     }
 
 }

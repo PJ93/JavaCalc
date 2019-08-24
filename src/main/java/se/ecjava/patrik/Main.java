@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     /**
      * --------------Program description and goal---------------
-     *Java Calculator exercise for ECUtbildning java kurs
+     *Java Calculator exercise for ECUtbildning java course
      *Make simple calculator that can do basic math
      *Make sure to use Test
      * -------------------------PJ93----------------------------
@@ -31,11 +31,16 @@ public class Main {
                 }//switch
                 while(calculation){
                     System.out.println("Enter the first number");
-                    int number1 = Integer.parseInt(scanner.nextLine());
+                    //int number1 = Integer.parseInt(scanner.nextLine());
+                    double number1 = Double.parseDouble(scanner.nextLine());
                     System.out.println("Enter the seconded number");
-                    int number2 = Integer.parseInt(scanner.nextLine());
+                    //int number2 = Integer.parseInt(scanner.nextLine());
+                    double number2 = Double.parseDouble(scanner.nextLine());
                     //char mathselect = Character.isJavaIdentifierPart();
                     // deleted and replaced with a simple number option for the time be
+
+
+
                     System.out.println("choose math equation");
                     System.out.println("+,-,*,/");
                     //int mathselect = Integer.parseInt(scanner.nextLine());
@@ -65,20 +70,20 @@ public class Main {
         }//static void
 
     //Calculation Methods
-    public static int calcMethodAdd(int x, int y){
-        int i = x + y;
+    static double calcMethodAdd(double x, double y){
+        double i = x + y;
         return i;
     }
-    public static int calcMethodSub(int x, int y){
-        int i = x - y;
+    static double calcMethodSub(double x, double y){
+        double i = x - y;
         return i;
     }
-    public static int calcMethodMulti(int x, int y){
-        int i = x * y;
+    static double calcMethodMulti(double x, double y){
+        double i = x * y;
         return i;
     }
-    public static int calcMethodDiv(int x, int y){
-        int i = x / y;
+    static double calcMethodDiv(double x, double y){
+        double i = x / y;
         return i;
     }
 }//main
